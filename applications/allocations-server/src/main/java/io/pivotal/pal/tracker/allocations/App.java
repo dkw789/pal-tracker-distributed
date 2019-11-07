@@ -15,13 +15,13 @@ import org.springframework.web.client.RestOperations;
 import java.util.TimeZone;
 
 
-@SpringBootApplication
-@ComponentScan({"io.pivotal.pal.tracker.allocations", "io.pivotal.pal.tracker.restsupport"})
-@EnableEurekaClient
-@EnableCircuitBreaker
 @EnableWebSecurity
 @EnableResourceServer
+@EnableCircuitBreaker
+@EnableEurekaClient
 @EnableOAuth2Client
+@SpringBootApplication
+@ComponentScan({"io.pivotal.pal.tracker.allocations", "io.pivotal.pal.tracker.restsupport"})
 
 public class App {
 
